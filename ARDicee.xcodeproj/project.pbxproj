@@ -56,15 +56,47 @@
 		72A4164322E2B6D200514164 /* ARDicee */ = {
 			isa = PBXGroup;
 			children = (
-				72A4164422E2B6D200514164 /* AppDelegate.swift */,
+				72A4165A22E2B72B00514164 /* Controller */,
+				72A4165822E2B71A00514164 /* Model */,
+				72A4165B22E2B73300514164 /* Supporting Files */,
+				72A4165922E2B72700514164 /* View */,
+			);
+			path = ARDicee;
+			sourceTree = "<group>";
+		};
+		72A4165822E2B71A00514164 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72A4165922E2B72700514164 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				72A4164622E2B6D200514164 /* art.scnassets */,
-				72A4164822E2B6D200514164 /* ViewController.swift */,
 				72A4164A22E2B6D200514164 /* Main.storyboard */,
 				72A4164D22E2B6D300514164 /* Assets.xcassets */,
 				72A4164F22E2B6D300514164 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72A4165A22E2B72B00514164 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72A4164422E2B6D200514164 /* AppDelegate.swift */,
+				72A4164822E2B6D200514164 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		72A4165B22E2B73300514164 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				72A4165222E2B6D300514164 /* Info.plist */,
 			);
-			path = ARDicee;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E7FB8SA95;
-				INFOPLIST_FILE = ARDicee/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARDicee/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E7FB8SA95;
-				INFOPLIST_FILE = ARDicee/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARDicee/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
