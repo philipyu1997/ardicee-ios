@@ -12,9 +12,11 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     
-    var diceArray = [SCNNode]()
-    
+    // Outlets
     @IBOutlet var sceneView: ARSCNView!
+    
+    // Properties
+    var diceArray = [SCNNode]()
     
     override func viewDidLoad() {
         
@@ -24,7 +26,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the view's delegate
         sceneView.delegate = self
-        
         sceneView.autoenablesDefaultLighting = true
         
     }
@@ -134,7 +135,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    //MARK: - ARSCNViewDelegateMethod
+    // MARK: - ARSCNViewDelegateMethod
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         
@@ -145,7 +146,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    //MARK: - Plane Rendering Methods
+    // MARK: - Plane Rendering Methods
     
     func createPlane(withPlaneAnchor planeAnchor: ARPlaneAnchor) -> SCNNode {
         
