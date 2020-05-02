@@ -16,6 +16,8 @@ ARDicee is a Las Vegas dice app using augmented reality. You can make the die ro
 
 - [X] User shall be able to click the "Reverse" bar button to roll the dice.
 - [X] User shall be able to tap anywhere on the screen to add more dices.
+- [X] User shall be able to shake their phone to roll the die.
+- [X] User shall be able to remove all dice(s) by clicking the "Trash" bar button.
 
 ## App Walkthrough
 
