@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Product Spec](#Product-Spec)
+2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
 4. [Credits](#Credits)
 
@@ -11,7 +11,7 @@
 
 ARDicee is a Las Vegas dice app using augmented reality. You can make the die roll at the press of a button or by shaking your phone. With this app in your pocket, you’ll be fully set up to settle any score on the go!
 
-## Product Spec
+## Product Specs
 ### User Stories
 
 - [X] User shall be able to click the "Reverse" bar button to roll the dice.
@@ -23,8 +23,8 @@ ARDicee is a Las Vegas dice app using augmented reality. You can make the die ro
 
 Here's a GIF of how the app works:
 
-<img src="ADD_GIF_LINK" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/81511019-27162300-92cb-11ea-8581-38fc2673296c.gif" width=250><br>
 
 ## Credits
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)

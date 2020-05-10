@@ -157,9 +157,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         planeNode.transform = SCNMatrix4MakeRotation(-Float.pi/2, 1, 0, 0)
         
         let gridMaterial = SCNMaterial()
-        
-        gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
-        
+
+//        gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
+        gridMaterial.diffuse.contents = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+
         plane.materials = [gridMaterial]
         planeNode.geometry = plane
         
