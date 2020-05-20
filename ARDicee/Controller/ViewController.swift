@@ -12,11 +12,11 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet var sceneView: ARSCNView!
     
-    // Properties
-    var diceArray = [SCNNode]()
+    // MARK: - Properties
+    private var diceArray = [SCNNode]()
     
     override func viewDidLoad() {
         
@@ -55,6 +55,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     // MARK: - Dice Rendering Methods
     
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        
+        rollAll()
+        
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if let touch = touches.first {
@@ -68,7 +74,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    func addDice(atLocation location: ARHitTestResult) {
+    private func addDice(atLocation location: ARHitTestResult) {
         
         let diceScene = SCNScene(named: "art.scnassets/diceCollada.scn")!
         
@@ -88,7 +94,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    func rollAll() {
+    private func rollAll() {
         
         if !diceArray.isEmpty {
             for dice in diceArray {
@@ -98,7 +104,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    func roll(dice: SCNNode) {
+    private func roll(dice: SCNNode) {
         
         let randomX = Float(arc4random_uniform(4) + 1) * (Float.pi/2)
         let randomZ = Float(arc4random_uniform(4) + 1) + (Float.pi/2)
@@ -113,13 +119,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    @IBAction func rollAgain(_ sender: UIBarButtonItem) {
-        
-        rollAll()
-        
-    }
+    // MARK: - IBAction Section
     
-    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+    @IBAction func rollAgain(_ sender: UIBarButtonItem) {
         
         rollAll()
         
@@ -158,7 +160,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let gridMaterial = SCNMaterial()
 
-//        gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
         gridMaterial.diffuse.contents = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
 
         plane.materials = [gridMaterial]

@@ -57,27 +57,19 @@
 			isa = PBXGroup;
 			children = (
 				72A4165A22E2B72B00514164 /* Controller */,
-				72A4165822E2B71A00514164 /* Model */,
 				72A4165B22E2B73300514164 /* Supporting Files */,
 				72A4165922E2B72700514164 /* View */,
 			);
 			path = ARDicee;
 			sourceTree = "<group>";
 		};
-		72A4165822E2B71A00514164 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		72A4165922E2B72700514164 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				72A4164622E2B6D200514164 /* art.scnassets */,
-				72A4164A22E2B6D200514164 /* Main.storyboard */,
 				72A4164D22E2B6D300514164 /* Assets.xcassets */,
 				72A4164F22E2B6D300514164 /* LaunchScreen.storyboard */,
+				72A4164A22E2B6D200514164 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
