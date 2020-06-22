@@ -23,7 +23,7 @@ ARDicee is a Las Vegas dice app using augmented reality. You can make the die ro
 
 Here's a GIF of how the app works:
 
-<img src="https://user-images.githubusercontent.com/35745973/81511019-27162300-92cb-11ea-8581-38fc2673296c.gif" width=250>
+<img src="https://github.com/py415/app-resources/blob/master/ios/ios-ardicee.gif" width=250>
 
 ## Credits
 
